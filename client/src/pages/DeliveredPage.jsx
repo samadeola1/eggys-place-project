@@ -15,7 +15,7 @@ const DeliveredPage = () => {
       setIsLoading(true);
 
       const res = await fetch(
-        `http://localhost:4040/api/order/customer-order?page=${page}`,
+        `${baseUrl}/api/order/customer-order?page=${page}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
