@@ -15,7 +15,7 @@ const DeliveredPage = () => {
       setIsLoading(true);
 
       const res = await fetch(
-        `${baseUrl}/api/order/customer-order?page=${page}`,
+        `http://localhost:4040/api/order/customer-order?page=${page}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -23,6 +23,8 @@ const DeliveredPage = () => {
         }
       );
       const data = await res.json();
+      console.log(data.orders);
+      
       setOrders(data.orders || []);
       setTotalPages(data.totalPages);
     } catch (error) {
@@ -75,13 +77,13 @@ const DeliveredPage = () => {
             >
               <div className="md:flex items-center gap-4">
                 <img
-                  src={firstItem.image}
-                  alt={firstItem.title}
+                  src={firstItem?.image}
+                  alt={firstItem?.title}
                   className="w-[140px] h-[140px] object-cover rounded"
                 />
                 <div>
-                  <p className="text-lg font-semibold">{firstItem.title}</p>
-                  <p className="text-sm text-[#00ff88] mt-1">₦{firstItem.price}</p>
+                  <p className="text-lg font-semibold">{firstItem?.title}</p>
+                  <p className="text-sm text-[#00ff88] mt-1">₦{firstItem?.price}</p>
                   <p className="text-xs text-gray-400 mt-1">
                     {new Date(order.createdAt).toLocaleDateString()}
                   </p>

@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import Recipient from "../features/checkout/Recipient";
 import Delivery from "../features/checkout/Delivery";
 
-const PK = import.meta.env.VITE_TEST_PUBLIC
+const PK = import.meta.env.VITE_TEST_PUBLIC;
 const baseUrl = import.meta.env.VITE_API_URL;
 
 const CheckOut = () => {
