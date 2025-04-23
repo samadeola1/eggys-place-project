@@ -63,10 +63,10 @@ const CheckOut = () => {
               paymentRef: transaction.reference,
             }),
           });
+ console.log(response);
  
   
           const data = await response.json();
-   console.log(data);
           if (data.success) {
             alert(` ${data.message} ${transaction.reference}`);
             
