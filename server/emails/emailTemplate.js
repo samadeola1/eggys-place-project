@@ -48,6 +48,7 @@ export function orderCreatedEmailTemplate(order) {
     <tr>
       <td style="padding: 8px 0;">${item.title}</td>
       <td style="padding: 8px 0;">₦${item.price}</td>
+      <td style="padding: 8px 0;">${item.duration}</td>
       <td style="padding: 8px 0;">${item.category}</td>
     </tr>
   `
