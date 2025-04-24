@@ -32,11 +32,11 @@ const orderSchema = new Schema(
         },
         duration: {
           type: String,
-          required: true,
+          // required: true,
         },
         rating: {
           type: String,
-          // required: true,
+          required: true,
         },
       },
     ],
