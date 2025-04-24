@@ -73,7 +73,7 @@ const CheckOut = () => {
           } else {
             alert(data.errMsg || "Failed to create order.");
           }
-          // console.log(data);
+          console.log(data);
           
         } catch (err) {          
           alert("Something went wrong while submitting the order.", err.message);
