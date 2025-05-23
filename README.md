@@ -20,19 +20,13 @@
 
 - Git And GitHub
 
-- React Bootstrap
+- Tailwind Css
 
 - Figma design
 
 ## Project description :
 
-This is a simple responsive mern stack Hr app which was used to teach my trainees how to build MERN stack app.
-
-The project has an admin dashboard(for employees with admin role) and employee dashboard(for registered employees only).
-
-Only the admin can register employees,approve leaves,create tasks,create teams,see all tasks,see all employees.
-
-Employees only sign in,reset password,update profile,apply for leave.
+I designed and developed a responsive e-commerce website for a burger brand, focusing on user-friendly navigation and a visually appetizing interface. The site features an interactive menu with customizable burger options, a streamlined ordering process, and secure checkout. Emphasis was placed on mobile optimization and a modern aesthetic to enhance user experience and drive online sales
 
 #### Tools Used
 
@@ -42,7 +36,7 @@ Employees only sign in,reset password,update profile,apply for leave.
 
 - Bycrypt.js
 
-## Hr App Website Preview :
+## Eggy's place Website Preview :
 
 Desktop design:
 <img
